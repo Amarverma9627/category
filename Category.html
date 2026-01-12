@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>GiftMarket - Tailwind 1920px Full Width</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        teal: {
+                            DEFAULT: '#036280',
+                            dark: '#004f5a',
+                        },
+                        text: {
+                            dark: '#1d1d1d',
+                        },
+                    },
+                    maxWidth: {
+                        '1920': '1920px',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-white " style="font-family: Poppins;">
+
+    <!-- Header -->
+    <header class="relative h-[152.54px] shadow-[0_0px_70px_rgba(0,0,0,0.20)] w-full ">
+
+        <!-- ================= TOP BAR ================= -->
+       <div class="bg-[#036280] text-white text-sm">
+  <div class="w-full flex justify-end">
+    <div
+      class="max-w-[1609px] w-full
+             flex flex-col md:flex-row
+             flex-wrap md:flex-nowrap
+             items-center justify-between
+             gap-2 md:gap-0
+             h-auto md:h-[54px]
+             px-4">
+
+      <!-- Left -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-12">
+        <div class="flex items-center gap-2 md:ml-48">
+          <img src="assets/call.png" class="w-4 h-4" />
+          <span class="text-[14px] sm:text-[15px] lg:text-[16px]">
+            +098-7654-3210
+          </span>
+        </div>
+
+        <div class="rotate-90 h-[0] border border-[#ffffffb6] w-[33px]"></div>
+
+        <div class="flex items-center gap-2">
+          <img src="assets/email-icon.png" class="w-[24px] h-[17px]" />
+          <span class="text-[14px] sm:text-[15px] lg:text-[16px]">
+            info@example.com
+          </span>
+        </div>
+      </div>
+
+      <!-- Login -->
+      <button
+        class="w-[127px] h-[36px] bg-white text-teal-600 font-bold rounded-full
+               text-[14px] sm:text-[15px] lg:text-[16px]
+               font-medium flex items-center justify-center gap-2
+               md:mr-[76px]">
+        Login <span class="opacity-40">|</span>
+        <img src="assets/Group 145.png" class="h-[6.45px] w-[11.88px]" />
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
+        <!-- ================= MAIN NAVBAR ================= -->
+        <div class="bg-white">
+            <div class="w-full flex justify-end">
+
+                <!-- Logo -->
+                <div
+                    class="absolute left-0 top-0 h-[152px] w-[409.12px] rounded-tr-[80px] bg-white hidden lg:flex items-center justify-center">
+                    <span class="text-[44px] font-bold text-[#036280]">GiftMarket</span>
+                </div>
+
+                <div
+                    class="max-w-[1384px] w-full flex items-center justify-between h-auto lg:h-[98px] px-4 lg:mr-[80px] py-4 lg:py-0">
+
+                    <!-- Mobile Logo -->
+                    <div class="lg:hidden text-2xl font-bold text-teal-600">
+                        GiftMarket
+                    </div>
+
+                    <!-- Menu (Desktop Only) -->
+                    <nav class="hidden lg:flex gap-[40px] text-[18px]">
+                        <a href="#" class="flex items-center gap-2 ">
+                            Home <img src="assets/Vector.png" class="w-[14.3px] h-[7.69px]" />
+                        </a>
+                        <a href="#" class="flex items-center gap-2">
+                            Shop <img src="assets/Vector.png" class="w-[14.3px] h-[7.69px]" />
+                        </a>
+                        <a href="#" class="flex items-center gap-2">
+                            Products <img src="assets/Vector.png" class="w-[14.3px] h-[7.69px]" />
+                        </a>
+                        <a href="#" class="flex items-center gap-2">
+                            Personalized <img src="assets/Vector.png" class="w-[14.3px] h-[7.69px]" />
+                        </a>
+                    </nav>
+
+                    <div
+                        class="hidden md:flex flex-1 max-w-[508.69px] h-[52.29px] rounded-full border border-[#0363803a] overflow-hidden">
+                        <div class="flex items-center gap-8 px-7 bg- border-r border-[#0363803a]  whitespace-nowrap">
+                            <img src="assets/Group 6.png" class="w-4 h-4 " />
+                            <span class="text-[18px] font-semibold">
+                                Category
+                                <img src="assets/Vector.png" class="inline w-[15px] ml-1" />
+                            </span>
+                        </div>
+                        <input type="text" placeholder="Search..." class="flex-1 px-3 outline-none" />
+                        <button class="bg-white pr-6">
+                            <img src="assets/search-icon.png" class="w-[15.36px] h-[15.36px]" />
+                        </button>
+                    </div>
+
+                    <!-- Icons -->
+                    <div class="flex items-center gap-[14px] ">
+                        <button
+                            class="relative flex justify-center items-center border border-gray-200 rounded-full w-[41.77px] h-[41.77px]">
+                            <img src="assets/heart.png" class="w-[20px] h-[18px]" />
+                            <span
+                                class="absolute w-[16.23px] h-[16.23px] flex items-center justify-center -top-2 left-[1px] bg-[#036280] text-white text-[8px] px-1 rounded-full">0</span>
+                        </button>
+
+                        <button
+                            class="relative flex justify-center items-center border border-gray-200 rounded-full w-[41.77px] h-[41.77px]">
+                            <img src="assets/cart.png" class="w-[20px] h-[18px]" />
+                            <span
+                                class="absolute w-[16.23px] h-[16.23px] flex items-center justify-center -top-2 left-[1px] bg-[#036280] text-white text-[8px] px-1 rounded-full">0</span>
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="relative mt-[37.84px] h-[560px]">
+        <div class="flex  w-[1740px]   after:content-['']  after:absolute  after:bottom-0 after:right-0 after:top-0 after:left-0  after:bg-gradient-to-r from-[#CD8423] to-transparent after:opacity-80  after:z-100
+           after:blur-[12px] after:rounded-[70px]  after:z-100 after:w-full rounded-2xl" class=" opacity-90  ">
+            <img src="assets/B1 2.png" alt="hero" class="absolute left-0 top-0 w-full h-full object-cover z-0">
+        </div>
+        <div class="absolute top-1/2 left-16 transform -translate-y-1/2  max-w-xl">
+            <h1 class=" font-semibold text-[65px] drop-shadow-[0_7px_5px_rgba(0,0,0,0.30)] tracking-[0.02em] ">Our
+                Products</h1>
+            <p class="text-[22px] w-[709px] leading-[32px] tracking-wide pt-2">Trusted by 100+ businesses worldwide.
+                Quality assurance and
+                bulk order guarantee.</p>
+        </div>
+
+    </section>
+    <section class="p-0">
+        <div class="pt-10 p-0 grid grid-cols-12 gap-6 ">
+
+            <!-- Sidebar -->
+            <aside class="w-[411px] h-[1363px]  col-span-12 md:col-span-3  p-0 ">
+                <div class="flex justify-between items-center  mb-10 pl-[-2px]">
+                    <h2 class="text-[24px] font-semibold text-[#036280]  ">
+                        Filter Options
+                    </h2>
+
+                    <div
+                        class="flex items-center justify-center shadow-[0_0_10px_rgba(0,0,0,0.15)] border border-gray-200 w-[37.23px] h-[37.23px] rounded-full ">
+                        <img class="w-[17.23px] h-[17.23px] " src="assets/filter_1_.png" alt="">
+                    </div>
+
+                </div>
+
+                <div
+                    class="px-5 h-[1298px] border border-gray-100  rounded-2xl shadow-[0_0px_10px_rgba(0,0,0,0.1)]  pt-5">
+                    <!-- Category -->
+                    <div class="mb-6 border-b border-gray-300 pb-6 w-full px-5">
+                        <h3 class="font-medium mb-4 text-[#036280] tracking-[0.6px]">By Category</h3>
+                        <ul class="space-y-2 text-[16px] text-gray-800">
+                            <li><input type="checkbox" class="mr-2">Welcome kits</li>
+                            <li><input type="checkbox" class="mr-2">Mugs</li>
+                            <li><input type="checkbox" class="mr-2">Stationery</li>
+                            <li><input type="checkbox" class="mr-2">Flower bouquet</li>
+                            <li><input type="checkbox" class="mr-2">Executive hampers</li>
+                            <li><input type="checkbox" class="mr-2">Dry fruits hampers</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6 border-b border-gray-300 pb-6 px-5">
+                        <h3 class="font-medium mb-4 text-[#036280] tracking-[0.6px]">By Occasion</h3>
+                        <ul class="space-y-2 text-sm text-gray-800">
+                            <li><input type="checkbox" class="mr-2">Diwali Corporate Gifting</li>
+                            <li><input type="checkbox" class="mr-2">Executive Corporate Gifts</li>
+                            <li><input type="checkbox" class="mr-2">Corporate Anniversary Gift</li>
+                            <li><input type="checkbox" class="mr-2">Rewards and recognition Gift</li>
+                            <li><input type="checkbox" class="mr-2">Corporate Christmas Gifts</li>
+                            <li><input type="checkbox" class="mr-2">New Year Corporate Gifting</li>
+                            <li><input type="checkbox" class="mr-2">Women's Day Gifting</li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="mb-6 border-b border-gray-300 pb-6 px-5">
+                        <h3 class="font-medium mb-4 text-[#036280] tracking-[0.6px]">Price Range</h3>
+                        <ul class="space-y-2 text-sm text-gray-800">
+                            <li><input type="checkbox" name="price" class="mr-2">Under $50</li>
+                            <li class="flex items-center gap-2">
+                                <!-- Checkbox box -->
+                                <span class="w-[14px] h-[14px] m-0 rounded-sm bg-yellow-400 border border-gray-500
+           flex items-center justify-center">
+
+                                    <!-- Tick icon -->
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+
+                                </span>
+
+                                <!-- Text -->
+                                <span class="mr-2 "> $50 - $100
+                                </span>
+
+                            </li>
+
+                            <li><input type="checkbox" name="price" class="mr-2">$100 - $200</li>
+                            <li><input type="checkbox" name="price" class="mr-2">$200 - $500</li>
+                            <li><input type="checkbox" name="price" class="mr-2">$over $500</li>
+                        </ul>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="mb-6 border-b border-gray-300 pb-6 px-5">
+                        <h3 class="font-medium mb-4 text-[#036280] tracking-[0.6px]">Availability</h3>
+                        <ul class="space-y-2 text-sm text-gray-800">
+                            <li class="flex items-center gap-2">
+                                <!-- Checkbox box -->
+                                <span class="w-[14px] h-[14px] m-0 rounded-sm bg-yellow-400 border border-gray-500
+           flex items-center justify-center">
+
+                                    <!-- Tick icon -->
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+
+                                </span>
+
+                                <!-- Text -->
+                                <span class="mr-2 "> In Stock
+                                </span>
+
+                            </li>
+                            <li><input type="checkbox" class="mr-2">Out of Order</li>
+                        </ul>
+                    </div>
+                    <!-- By Promotion -->
+                    <div class="mb-6 border-b border-gray-300 pb-6 px-5">
+                        <h3 class="font-medium mb-4 text-[#036280] tracking-[0.6px]">By Promotion</h3>
+                        <ul class="space-y-2 text-sm text-gray-800">
+                            <li><input type="checkbox" class="mr-2">New Arrival</li>
+                            <li class="flex items-center gap-2">
+                                <!-- Checkbox box -->
+                                <span class="w-[14px] h-[14px] m-0 rounded-sm bg-yellow-400 border border-gray-500
+           flex items-center justify-center">
+
+                                    <!-- Tick icon -->
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+
+                                </span>
+
+                                <!-- Text -->
+                                <span class="mr-2 "> Best Seller
+                                </span>
+
+                            </li>
+                            <li><input type="checkbox" class="mr-2">On Sale</li>
+                        </ul>
+                    </div>
+                    <!-- Material -->
+                    <div class="mb-6 border-gray-300 pb-6 px-5">
+                        <h3 class="font-medium mb-4 text-[#036280] tracking-[0.6px]">Material</h3>
+                        <ul class="space-y-2 text-sm text-gray-800">
+                            <li><input type="checkbox" class="mr-2">Wood</li>
+                            <li><input type="checkbox" class="mr-2">Leather</li>
+                            <li><input type="checkbox" class="mr-2">Metal</li>
+                            <li><input type="checkbox" class="mr-2">Fabric</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Products -->
+            <section class="w-[1300px]   col-span-12 md:col-span-9 m-0  p-0 mb-10">
+                <div class="w-full bg-gray-100  px-8 py-8  h-[1628.67px] rounded-3xl ">
+                    <!-- Top Bar -->
+                    <div class="flex flex-wrap items-center justify-between mb-0  ">
+                        <p class="text-[20px] text-gray-500">Showing 1–9 of 260 results</p>
+                        <div class="text-[20px] opacity-60">
+                            <span class="mr-2">Sort by : </span>
+                            <!-- Custom Select -->
+                            <span class="relative ">
+                                <select
+                                    class="w-[219px] h-[48px] pl-6 pr-2 border border-gray-300 appearance-none rounded-full">
+                                    <option class="text-[20px]" value="">Default Sorting</option>
+                                </select>
+
+                                <!-- Arrow -->
+                                <svg class="absolute  right-3 top-1/2 -translate-y-1/2
+                                w-5 h-5 text-gray-700 pointer-events-none" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 mb-8">
+                        <span class="text-[20px]">Active Filter : </span>
+                        <span class="ml-3 text-white ">
+                            <span
+                                class="w-[193px] h-[40px] bg-[#036280] inline-block rounded-full inline-flex items-center justify-center">
+                                <span class="text-[16px] ">Price: $50 - $100 <span><img class="inline-block ml-3"
+                                            src="assets/cancle.png" alt=""></span></span>
+                            </span>
+                            <span
+                                class="w-[129px] h-[40px] bg-[#036280] ml-3 inline-block rounded-full inline-flex items-center justify-center">
+                                <span class="text-[16px] ">In-stock <span> <img class="inline-block ml-3"
+                                            src="assets/cancle.png" alt=""></span></span>
+                            </span>
+                            <span
+                                class="w-[139px] h-[40px] bg-[#036280] ml-3 inline-block rounded-full inline-flex items-center justify-center">
+                                <span class="text-[16px]">Best Seller <span><img class="inline-block ml-3"
+                                            src="assets/cancle.png" alt=""></span></span>
+                            </span>
+                        </span>
+                        <span><a class="text-[#D59200] text-[18] pl-6 underline font-medium" href="">Clear
+                                all</a></span>
+                    </div>
+                    <!-- Product Grid -->
+                    <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+
+                        <!-- Card -->
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg ">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/p1 2.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] w-[208px] text-gray-500 mb-3">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right  mt-[-10px] ">
+                                    <p class="text-[36px] mb-2 tracking-[3px] font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD-2 -->
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/p1 2.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] text-gray-500 mb-3 w-[208px]">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/p1 2.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] text-gray-500 mb-3 w-[208px]">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-4 -->
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/flower-img.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px]  text-gray-500 mb-3 w-[208px]">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/flower-img.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2  leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] w-[208px] text-gray-500 mb-3">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/flower-img.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] text-gray-500 mb-3  w-[208px] ">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-7 -->
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/p1 3.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] text-gray-500 mb-3  w-[208px] ">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/p1 3.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] w-[208px] text-gray-500 mb-3">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[401px] h-[461px] bg-white rounded-3xl shadow relative shadow-lg">
+                            <div class="bg-white rounded-3xl  mb-4 p-1 ">
+                                <img class="w-full rounded-3xl " src="assets/p1 3.png" />
+                            </div>
+                            <div
+                                class="w-[38px] h-[38px] rounded-full flex justify-center items-center border-gray-300 border border-solid bg-white absolute top-3 right-3">
+                                <img src="assets/heart.png" alt="">
+                            </div>
+
+                            <div class="flex justify-between mx-auto w-[367.18px]">
+                                <div class="w-1/2 leading-snug">
+                                    <h3 class="font-semibold text-[20px] mb-2">Deluxe Gift Set</h3>
+                                    <p class="text-[18px] w-[208px] text-gray-500 mb-3">
+                                        Premium collection for special occasion
+                                    </p>
+                                </div>
+
+                                <div class="text-right mt-[-10px]">
+                                    <p class="text-[36px] tracking-[3px] mb-2 font-bold text-[#036280]">$50</p>
+                                    <div
+                                        class="bg-[#036280] w-[77px] h-[30px]  flex justify-center items-center text-white text-4xl rounded-full">
+
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-2 text-[16px] py-10">
+
+                    <!-- Back -->
+                    <button class="px-3 py-2 text-[16px] border rounded-lg text-gray-500 hover:bg-gray-100">
+                        &lt; Back
+                    </button>
+
+                    <!-- Page 1 -->
+                    <button class="w-9 h-9 border rounded-lg text-gray-600 hover:bg-gray-100">
+                        1
+                    </button>
+
+                    <!-- Active Page -->
+                    <button class="w-9 h-9 rounded-lg bg-[#036280] text-white font-medium">
+                        2
+                    </button>
+
+                    <!-- Page 3 -->
+                    <button class="w-9 h-9 border rounded-lg text-gray-600 hover:bg-gray-100">
+                        3
+                    </button>
+
+                    <!-- Page 4 -->
+                    <button class="w-9 h-9 border rounded-lg text-gray-600 hover:bg-gray-100">
+                        4
+                    </button>
+
+                    <!-- Page 5 -->
+                    <button class="w-9 h-9 border rounded-lg text-gray-600 hover:bg-gray-100">
+                        5
+                    </button>
+
+                    <!-- Next -->
+                    <button class="px-3 py-2 text-[16px] border rounded-lg text-gray-700 hover:bg-gray-100">
+                        Next &gt;
+                    </button>
+
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="relative  left-0 right-0 h-[647px]  bg-[#036280] text-white">
+        <div class="w-[1740px] mx-auto px-6 py-16">
+
+            <!-- Top Row -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <h2 class=" text-[45.3px] font-bold">GiftMarket</h2>
+
+                <!-- Search -->
+                <div class="flex  items-center bg-white rounded-full overflow-hidden w-full md:w-[599px] h-[61px]">
+                    <img class="h-[26px] w-[26px] ml-6" src="assets/search2.png" alt="">
+                    <input type="text" placeholder="Enter your email"
+                        class="flex-1 px-4 py-2 text-xl text-gray-700 outline-none" />
+                    <button
+                        class="w-[139px] h-full bg-[#02556f] border-2 rounded-tr-[30px] rounded-br-[30px] border-white px-6 text-[18px] font-medium">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-white/30 my-8"></div>
+
+            <!-- Middle Links -->
+            <div class="w-[1706px] h-[243] grid grid-cols-2 md:grid-cols-5 gap-40 mt-14">
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold mb-4 uppercase text-[21px] pb-6">Company</h3>
+                    <ul class="space-y-2 text-white/80 text-[21px] ">
+                        <li class="pb-2">About Us</li>
+                        <li class="pb-2">Our Story</li>
+                        <li class="pb-2">Contact</li>
+                        <li class="pb-2">Blog</li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="font-semibold mb-4 uppercase text-[21px] pb-6">Products</h3>
+                    <ul class="space-y-2 text-white/80 text-[21px]">
+                        <li class="pb-2">Categories</li>
+                        <li class="pb-2">Best Sellers</li>
+                        <li class="pb-2">Browse All</li>
+                        <li class="pb-2">Lorem Ipsum</li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold mb-4 uppercase text-[21px] pb-6">Quick Links</h3>
+                    <ul class="space-y-2 text-white/80 text-[21px]">
+                        <li class="pb-2">Corporate Gifting</li>
+                        <li class="pb-2">Welcome kit</li>
+                        <li class="pb-2">Gift Bundles</li>
+                        <li class="pb-2">Occasions gifting</li>
+                    </ul>
+                </div>
+
+                <!-- Empty spacer -->
+                <div></div>
+
+                <!-- Social -->
+                <div class="absolute flex right-60 flex-col justify-end  h-[200px]">
+                    <h3 class="font-semibold mb-4 uppercase text-[21px]">Connect with us</h3>
+                    <div class="flex items-center  gap-8 text-lg">
+                        <span><img src="assets/yt.png" alt=""></span>
+                        <span><img src="assets/fb.png" alt=""></span>
+                        <span><img src="assets/twitter.png" alt=""></span>
+                        <span><img src="assets/instagram.png" alt=""></span>
+                        <span><img src="assets/in.png" alt="in"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-white/30 my-8"></div>
+
+            <!-- Bottom Row -->
+            <div class="flex flex-col md:flex-row md:justify-between text-[21px] text-white/80 gap-4">
+                <p>© 2025 GiftMarket. All rights reserved.</p>
+
+                <div class="flex gap-9 ">
+                    <a href="#">Home</a>
+                    <a href="#">Category</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">About</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
